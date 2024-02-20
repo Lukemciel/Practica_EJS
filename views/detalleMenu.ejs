@@ -14,10 +14,11 @@
               <%= menuFind.title %>
             </h1>
             <br />
-            <% if (!menuFind.description){ %>
+            <h3> <%= menuFind.description %></h3>
+            <% if (!menuFind.description_completed){ %>
               <h4>Plato tipico</h4>
               <% } else { %>
-                  <h4><%= menuFind.description %></h4>
+                  <h4><%= menuFind.description_completed %></h4>
                   <% } %>
                   <p class="ps-text-grey"> <%= menuFind.price %></p>
           </div>
